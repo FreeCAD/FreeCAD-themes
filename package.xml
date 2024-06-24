@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
+    <name>FreeCAD-themes</name>
+    <version>2024.07.24</version>
+    <date>2024.07.24</date>
+    <description>Additional themes for FreeCAD</description>
+    <maintainer email="themes@freecad.org">The FreeCAD Team</maintainer>
+    <license file="LICENSE">LGPL-2.1-or-later</license>
+    <url type="repository" branch="main">https://github.com/FreeCAD/FreeCAD-themes</url>
+    <icon>resources/icons/themes.svg</icon>
+
+    <content>
+        <preferencepack>
+            <name>Behave-dark</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>Behave-dark.qss</file>
+            <file>Behave-dark-overlay.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>Dark-contrast</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>Dark-contrast.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>Darker</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>Darker.qss</file>
+            <file>Darker-overlay.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>ProDark</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>ProDark.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>Dark-modern</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>Dark-modern.qss</file>
+            <file>Dark-modern-overlay.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>Light-modern</name>
+            <type>Theme</type>
+            <tag>light</tag>
+            <file>Light-modern.qss</file>
+            <file>Light-modern-overlay.qss</file>
+        </preferencepack>
+    </content>
+</package>
