@@ -1544,6 +1544,12 @@ QPushButton:focus {
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  @ThemeAccentColor2, stop:1  @ThemeAccentColor2);
 }
 
+#CreateNewRow > QPushButton { // linked to https://github.com/FreeCAD/FreeCAD/pull/15356
+  /* Reset min width to default */
+  min-width: -1;
+  min-height: 50px;
+}
+
 QPushButton:disabled,
 QPushButton:disabled:checked {
     color: #787878;
