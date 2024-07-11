@@ -1535,6 +1535,12 @@ QPushButton:focus {
     border: 1px solid #f5f5f5;
 }
 
+#CreateNewRow > QPushButton { // linked to https://github.com/FreeCAD/FreeCAD/pull/15356
+  /* Reset min width to default */
+  min-width: -1;
+  min-height: 50px;
+}
+
 QPushButton:disabled,
 QPushButton:disabled:checked {
     color: #f5f5f5;
