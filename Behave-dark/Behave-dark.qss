@@ -1788,9 +1788,9 @@ QCheckBox:disabled {
 
 QCheckBox::indicator,
 QGroupBox::indicator {
-    color:  @ThemeAccentColor1;
+    color: #61D29D;
     background-color: rgba(255,255,255,20);
-    border: 1px solid #232932;
+    border: 1px solid #565bb626;
     width: 11px;
     height: 11px;
     border-radius:2px;
@@ -2457,3 +2457,21 @@ QTreeView::branch#groupsTreeView:closed:has-children:has-siblings  {
   QTreeView::branch#groupsTreeView:has-siblings:!adjoins-item  {
     border-image: none 0;
   }
+
+/*==================================================================================================
+ * Special tweak for TechDraw ProjGroup task panel to keep acceptable width
+ * ==================================================================================================*/
+
+QWidget[objectName="TechDrawGui__TaskProjGroup"] QPushButton {
+    min-width: 24px;
+    padding: 4px 6px;
+}
+
+QWidget[objectName="TechDrawGui__TaskProjGroup"] QComboBox[objectName="cmbScaleType"] {
+    min-width: 56px;
+    /*width: 58px;*/
+}
+
+QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleNum"], QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleDen"]{
+    min-width: 28px;
+}
