@@ -173,4 +173,3 @@ Gui--OverlaySplitterHandle Gui--OverlayToolButton:hover,
 Gui--OverlayToolButton[objectName="OBTN Float"]:hover {
   image: url(qss:overlay/icons/mode_lighter.svg);
 }
-
