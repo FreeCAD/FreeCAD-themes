@@ -1,0 +1,175 @@
+/* The OverlayTabWidget is named as OverlayLeft, OverlayRight, OverlayTop, OverlayBottom.
+To customize for each overlay docking site, use the following selector
+
+Gui--OverlayTabWidget#OverlayLeft {}
+*/
+/*
+* {
+  color: #f0f0f0;
+  alternate-background-color: rgba(255, 179, 0, 0.607);
+  background-color: rgba(0, 255, 132, 0.607);
+}*/
+
+
+QFrame {
+  border: none;
+}
+
+QTabWidget::pane {
+  background-color: transparent;
+  border: transparent;
+}
+
+QAbstractItemView {
+  background-color: #2C333D;
+  alternate-background-color: #232932; /* related with QListView background  */
+  color: #65A2E5;
+  border: transparent;
+  padding-right: 5px;
+}
+
+Gui--OverlayTitleBar,
+Gui--OverlaySplitterHandle {
+  background-color: transparent;
+}
+
+Gui--OverlayTabWidget[transparent="false"] QTreeView::item {
+  color: #ffffff;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item {
+  color: #ffffff;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected {
+  color: #ffffff;
+  background-color: #434D5B;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:focus {
+  color: #ffffff;
+  background-color: #2C333D;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected:focus {
+  color: #ffffff;
+  background-color: #2C333D;
+}
+
+/* The OverlayTabWidget is named as OverlayLeft, OverlayRight, OverlayTop, OverlayBottom.
+To customize for each overlay docking site, use the following selector
+
+Gui--OverlayTabWidget#OverlayLeft {}
+*/
+
+Gui--OverlayTabWidget {
+  qproperty-effectColor: rgba(25, 25, 25, 220);
+  qproperty-effectBlurRadius: 5;
+  qproperty-effectOffsetX: 0;
+  qproperty-effectOffsetY: 0;
+  qproperty-effectWidth: 1;
+  qproperty-effectHeight: 1;
+  qproperty-enableEffect: 1;
+}
+
+Gui--OverlayTabWidget#OverlayBottom {
+  qproperty-effectColor: rgba(100, 100, 100, 220);
+  qproperty-effectBlurRadius: 5;
+  qproperty-effectOffsetX: 0.0;
+  qproperty-effectOffsetY: 0.0;
+  qproperty-effectWidth: 1;
+  qproperty-effectHeight: 1;
+  qproperty-enableEffect: 1;
+}
+
+Gui--PropertyEditor--PropertyEditor {
+  qproperty-groupTextColor: #61D29D;
+  qproperty-groupBackground: #2C333D;
+  qproperty-itemBackground: #2C333D;
+}
+
+Gui--OverlayTabWidget::pane {
+  background-color: transparent;
+  border: transparent;
+}
+
+QSint--ActionGroup QFrame[class="content"] {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+Gui--OverlayTabWidget::tab-bar:top,
+Gui--OverlayTabWidget::tab-bar:bottom {
+  left: 10px;
+  alignment: left;
+}
+
+Gui--OverlayTabWidget::tab-bar:left,
+Gui--OverlayTabWidget::tab-bar:right {
+  top: 10px;
+  alignment: top;
+}
+
+Gui--OverlayProxyWidget {
+  qproperty-hintColor: rgba(250, 250, 250, 0.6);
+}
+
+Gui--OverlayToolButton {
+  border: 0.5px solid transparent;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton:hover {
+  border: 0.5px solid #f5f5f5;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton:focus {
+  border: 0.5px solid #0099ff;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton::pressed,
+Gui--OverlayToolButton:checked {
+  border: 0.5px solid #696969;
+  border-radius: 2px;
+  background-color: #696969;
+}
+
+Gui--OverlayToolButton:checked:hover {
+  border: 0.5px solid #f5f5f5;
+}
+
+Gui--OverlayToolButton[objectName="OBTN Transparent"] {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN Overlay"]  {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN AutoMode"]  {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlaySplitterHandle Gui--OverlayToolButton,
+Gui--OverlayToolButton[objectName="OBTN Float"]  {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
+
+Gui--OverlaySplitterHandle Gui--OverlayToolButton:hover,
+Gui--OverlayToolButton[objectName="OBTN Float"]:hover {
+  image: url(qss:overlay/behave-dark-icons/mode_lighter.svg);
+}
