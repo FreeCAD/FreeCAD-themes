@@ -1512,7 +1512,7 @@ QComboBox {
 
 QComboBox QAbstractItemView {
     color: #bebebe; /* same as regular QComboBox color */
-    background-color: transparent;
+    background-color: #232932;
     selection-color: white;
     selection-background-color:  @ThemeAccentColor2;
     border-width: 5px 0px 5px 0px;
@@ -1616,6 +1616,19 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QWidget > QWidget > QF
     border: 1px solid #232932;
     border-radius: 2px;
     padding: 2px 6px;
+}
+
+#CreateNewRow > QPushButton {
+    min-width: -1;
+    text-align: center;
+    background-color: transparent;
+    border-bottom-color: #444d58; /* simulates shadow under the button */
+}
+
+#CreateNewRow > QPushButton:hover,
+#CreateNewRow > QPushButton:focus {
+    color: transparent;
+    border-color: #3a7400;
 }
 
 QPushButton:checked {
@@ -2440,23 +2453,23 @@ Settings menu #groupsTreeView:
 
 QTreeView::branch#groupsTreeView:closed:has-children:has-siblings  {
     border-image: none 0;
-  }
+}
 
-  QTreeView::branch#groupsTreeView:open:has-children:has-siblings  {
+QTreeView::branch#groupsTreeView:open:has-children:has-siblings  {
     border-image: none 0;
-  }
+}
 
-  QTreeView::branch#groupsTreeView:open:has-children:!has-siblings  {
+QTreeView::branch#groupsTreeView:open:has-children:!has-siblings  {
    border-image: none 0;
-  }
+}
 
-  QTreeView::branch#groupsTreeView:has-children:!has-siblings:closed  {
+QTreeView::branch#groupsTreeView:has-children:!has-siblings:closed  {
     border-image: none 0;
-  }
+}
 
-  QTreeView::branch#groupsTreeView:has-siblings:!adjoins-item  {
+QTreeView::branch#groupsTreeView:has-siblings:!adjoins-item  {
     border-image: none 0;
-  }
+}
 
 /*==================================================================================================
  * Special tweak for TechDraw ProjGroup task panel to keep acceptable width
@@ -2474,4 +2487,9 @@ QWidget[objectName="TechDrawGui__TaskProjGroup"] QComboBox[objectName="cmbScaleT
 
 QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleNum"], QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleDen"]{
     min-width: 28px;
+}
+
+QTableWidget[objectName="PreferencePacks"] QPushButton {
+    min-width: 28px;
+    min-height: 14px;
 }

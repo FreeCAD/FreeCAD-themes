@@ -21,7 +21,7 @@ QTabWidget::pane {
 }
 
 QAbstractItemView {
-  background-color: #3c3c3c;
+  background-color: transparent;
   alternate-background-color: #333333; /* related with QListView background  */
   color: #e0e0e0;
   border: transparent;
