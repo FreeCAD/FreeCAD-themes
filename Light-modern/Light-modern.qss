@@ -2673,4 +2673,3 @@ Gui--OverlayToolButton[objectName="OBTN Overlay"] {
 Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover {
   image: url(qss:images_classic/overlay-black.png);
 }
-
