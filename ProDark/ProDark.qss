@@ -80,11 +80,11 @@ QToolBar * {
 Style Links
 ==================================================================================================*/
 QLabel[haslink="true"] {
-    color: #55aaff;
+    color: rgba(100, 149, 237, 255);
 }
 
 Gui--UrlLabel {
-    color: #55aaff;
+    color: rgba(100, 149, 237, 255);
 }
 
 /*==================================================================================================
@@ -1522,7 +1522,7 @@ QComboBox {
 
 QComboBox QAbstractItemView {
     color: #bebebe; /* same as regular QComboBox color */
-    background-color: transparent; /* was transparent */
+    background-color: #2a2a2a; /* was transparent */
     selection-color: #f5f5f5;
     selection-background-color:  @ThemeAccentColor1;
     border-width: 5px 0px 5px 0px;
@@ -1552,10 +1552,17 @@ QPushButton:focus {
     border: 1px solid #f5f5f5;
 }
 
-#CreateNewRow > QPushButton { /* linked to https://github.com/FreeCAD/FreeCAD/pull/15356 */
-  /* Reset min width to default */
-  min-width: -1;
-  min-height: 50px;
+#CreateNewRow > QPushButton {
+    min-width: -1;
+    text-align: center;
+    background-color: transparent;
+    border-bottom-color: #444d58; /* simulates shadow under the button */
+}
+
+#CreateNewRow > QPushButton:hover,
+#CreateNewRow > QPushButton:focus {
+    color: transparent;
+    border-color: #3a7400;
 }
 
 QPushButton:disabled,
@@ -1734,6 +1741,8 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QWidget > QWidget > QF
     border-radius: 1px;
     padding: 2px 6px;
 }
+
+
 
 /*==================================================================================================
 Tool button Icon fix in save dialogs
@@ -2568,14 +2577,6 @@ Gui--StatefulLabel[state="fully_constrained"] {
 }
 
 /*==================================================================================================
- * PREFERENCES PACKS
- * ==================================================================================================*/
-Gui--Dialog--DlgSettingsGeneral > QGroupBox > QGroupBox > QTableWidget > QWidget > QPushButton {
-    margin: 0px;
-}
-
-
-/*==================================================================================================
  * Special tweak for TechDraw ProjGroup task panel to keep acceptable width
  * ==================================================================================================*/
 
@@ -2591,4 +2592,9 @@ QWidget[objectName="TechDrawGui__TaskProjGroup"] QComboBox[objectName="cmbScaleT
 
 QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleNum"], QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleDen"]{
     min-width: 28px;
+}
+
+QTableWidget[objectName="PreferencePacks"] QPushButton {
+    min-width: 28px;
+    min-height: 14px;
 }
