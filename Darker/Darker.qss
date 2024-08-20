@@ -2661,4 +2661,3 @@ QTableWidget[objectName="PreferencePacks"] QPushButton {
     min-width: 28px;
     min-height: 14px;
 }
-
