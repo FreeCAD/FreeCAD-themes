@@ -22,7 +22,7 @@ QTabWidget::pane {
 
 QAbstractItemView {
   background-color: transparent;
-  alternate-background-color: #333333; /* related with QListView background  */
+  alternate-background-color: #5b5b5b; /* related with QListView background  */
   color: #e0e0e0;
   border: transparent;
   padding-right: 5px;
@@ -80,9 +80,9 @@ Gui--OverlayTabWidget#OverlayBottom {
 }
 
 Gui--PropertyEditor--PropertyEditor {
-  qproperty-groupTextColor: #bebebe;
-  qproperty-groupBackground: #2a2a2a;
-  qproperty-itemBackground: #2a2a2a;
+  qproperty-groupTextColor: white;
+  qproperty-groupBackground: #1c1b22;
+  qproperty-itemBackground: #1c1b22;
 }
 
 Gui--OverlayTabWidget::pane {

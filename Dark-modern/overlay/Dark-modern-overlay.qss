@@ -82,7 +82,7 @@ Gui--OverlayTabWidget#OverlayBottom {
 Gui--PropertyEditor--PropertyEditor {
   qproperty-groupTextColor: #bebebe;
   qproperty-groupBackground: #2a2a2a;
-  qproperty-itemBackground: #2a2a2a;
+  qproperty-itemBackground: #2C333D;
 }
 
 Gui--OverlayTabWidget::pane {
