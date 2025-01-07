@@ -80,11 +80,11 @@ QToolBar * {
 Style Links
 ==================================================================================================*/
 QLabel[haslink="true"] {
-    color: rgba(100, 149, 237, 255);
+    color: #55aaff;
 }
 
 Gui--UrlLabel {
-    color: rgba(100, 149, 237, 255);
+    color: #55aaff;
 }
 
 /*==================================================================================================
@@ -1248,7 +1248,7 @@ QToolBar > Gui--WorkbenchComboBox  {
     color: #f5f5f5;
     background-color: #2a2a2a;  /* workbench picker and drop-down */
     selection-color: #ffffff;
-    selection-background-color: #2a2a2a;
+    selection-background-color: @ThemeAccentColor1;
     border: 1px solid #2a2a2a;
     border-radius: 1px;
     min-width: 50px; /* it ensures the default value is correctly displayed */
@@ -1521,7 +1521,7 @@ QComboBox {
 }
 
 QComboBox QAbstractItemView {
-    color: #bebebe; /* same as regular QComboBox color */
+    color: #2a2a2a; /* same as regular QComboBox color */
     background-color: #2a2a2a; /* was transparent */
     selection-color: #f5f5f5;
     selection-background-color:  @ThemeAccentColor1;
@@ -1554,6 +1554,7 @@ QPushButton:focus {
 
 #CreateNewRow > QPushButton {
     min-width: -1;
+    min-height: 50px;
     text-align: center;
     background-color: transparent;
     border-bottom-color: #444d58; /* simulates shadow under the button */
@@ -1564,6 +1565,7 @@ QPushButton:focus {
     color: transparent;
     border-color: #3a7400;
 }
+
 
 QPushButton:disabled,
 QPushButton:disabled:checked {
@@ -1742,8 +1744,6 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QWidget > QWidget > QF
     padding: 2px 6px;
 }
 
-
-
 /*==================================================================================================
 Tool button Icon fix in save dialogs
 ==================================================================================================*/
@@ -1834,6 +1834,11 @@ QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
     background-color:  @ThemeAccentColor1;
 }
 
+QSint--ActionGroup QFrame[class="content"] QToolButton:checked {
+    color: white;
+    background-color: @ThemeAccentColor1;
+}
+
 /* QToolButtons with a menu found in Sketcher task panel*/
 QSint--ActionGroup QToolButton::menu-button {
     border: none;
@@ -1864,16 +1869,23 @@ QComboBox inside Task Panel content
 ==================================================================================================*/
 /* Fix for QComboBox inside Task Panel due to not correctly styling it with regular */
 /* found inside TechDraw Workbench and "insert multiple views" from toolbar */
-/* TODO: external border not working, in the rest of GUI works setting up Qmenu background color but inside Task Panel it doesn't... */
+/* TODO: external border not working, in the rest of GUI works setting up Qmenu background color but inside Task Panel it doesn't... 
 QSint--ActionGroup QFrame[class="content"] QMenu,
 QSint--ActionGroup QFrame[class="content"] QMenu::item {
     background-color: #2a2a2a;
 }
 
 QSint--ActionGroup QFrame[class="content"] QComboBox QAbstractItemView {
-    background-color: #333333;
+    color: #f5f5f5;
+    background-color: #2a2a2a;
+    selection-color: #f5f5f5;
+    selection-background-color:  @ThemeAccentColor1;
+    border-width: 5px 0px 5px 0px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 0px -1px 0px 0px;
 }
-
+*/
 
 /*==================================================================================================
 Radio button
@@ -2577,6 +2589,14 @@ Gui--StatefulLabel[state="fully_constrained"] {
 }
 
 /*==================================================================================================
+ * PREFERENCES PACKS
+ * ==================================================================================================*/
+Gui--Dialog--DlgSettingsGeneral > QGroupBox > QGroupBox > QTableWidget > QWidget > QPushButton {
+    margin: 0px;
+}
+
+
+/*==================================================================================================
  * Special tweak for TechDraw ProjGroup task panel to keep acceptable width
  * ==================================================================================================*/
 
@@ -2594,7 +2614,9 @@ QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleNum
     min-width: 28px;
 }
 
-QTableWidget[objectName="PreferencePacks"] QPushButton {
-    min-width: 28px;
-    min-height: 14px;
+QLabel[objectName="labelStatus"] {
+    color: #61D29D;
+    font-weight: bold;
+    background-color: #333333;
 }
+
