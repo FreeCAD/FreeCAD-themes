@@ -180,6 +180,14 @@ QMenu::item:pressed {
     background-color: #2C333D; /*Drop-down hover etc*/
 }
 
+QMenuBar:disabled,
+QMenuBar::item:disabled,
+Qmenu:disabled,
+QMenu::item:disabled {
+    color: #565d68; /*#588AC1;*/
+    background-color: #232932; /* main background color */
+}
+
 QMenu::right-arrow {
     width: 10px;
     height: 10px;
@@ -420,8 +428,7 @@ QDockWidget::float-button:pressed {
     background-color: rgba(255,255,255,30);
 }
 
-/* fix for Python Console (probably there is a smarter way to arrive to it) */
-QDockWidget > QFrame {
+QDockWidget[objectName="Python console"] QFrame,  QDockWidget[objectName="Report view"] QFrame {
     background-color: #2C333D;
     border: 1px solid #2C333D;
 }
@@ -460,14 +467,14 @@ QAbstractScrollArea::corner {
 }
 
 QScrollBar:horizontal {
-    background-color: transparent;
+    background-color: #2C333D;
     height: 15px;
     margin: 0px;
 }
 
 QScrollBar::handle:vertical,
 QScrollBar::handle:horizontal {
-    background-color: rgba(0,0,0,80);
+    background-color: rgba(64,131,224,80);
 }
 
 QScrollBar::handle:vertical:hover,
@@ -476,6 +483,12 @@ QScrollBar::handle:horizontal:hover {
 }
 
 QScrollBar::handle:horizontal {
+    min-width: 5px;
+    border-radius: 3px;
+    margin: 4px 15px;
+}
+
+QScrollBar::handle:vertical {
     min-width: 5px;
     border-radius: 3px;
     margin: 4px 15px;
@@ -520,7 +533,7 @@ QScrollBar::sub-page:horizontal {
 }
 
 QScrollBar:vertical {
-    background-color: transparent;
+    background-color: #2C333D;
     width: 15px;
     margin: 0px;
 }
@@ -1544,12 +1557,6 @@ QPushButton:focus {
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  @ThemeAccentColor2, stop:1  @ThemeAccentColor2);
 }
 
-#CreateNewRow > QPushButton { /* linked to https://github.com/FreeCAD/FreeCAD/pull/15356 */
-  /* Reset min width to default */
-  min-width: -1;
-  min-height: 50px;
-}
-
 QPushButton:disabled,
 QPushButton:disabled:checked {
     color: #787878;
@@ -1620,6 +1627,7 @@ Gui--PropertyEditor--PropertyEditor > QWidget > QWidget > QWidget > QWidget > QF
 
 #CreateNewRow > QPushButton {
     min-width: -1;
+    min-height: 50px;
     text-align: center;
     background-color: transparent;
     border-bottom-color: #444d58; /* simulates shadow under the button */
@@ -1716,6 +1724,11 @@ QSint--ActionGroup QFrame[class="content"] QToolButton:disabled:checked {
 
 QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0  @ThemeAccentColor2, stop:1  @ThemeAccentColor2);
+}
+
+QSint--ActionGroup QFrame[class="content"] QToolButton:checked {
+    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.3, x2:0, y2:1, stop:0 #406350, stop:1 #68917a);
 }
 
 /* QToolButtons with a menu found in Sketcher task panel*/
@@ -2485,11 +2498,63 @@ QWidget[objectName="TechDrawGui__TaskProjGroup"] QComboBox[objectName="cmbScaleT
     /*width: 58px;*/
 }
 
+QWidget[objectName="TechDrawGui__TaskProjGroup"] QComboBox QAbstractItemView {
+    color: #bebebe; /* same as regular QComboBox color */
+    background-color: #232932;
+    selection-color: white;
+    selection-background-color:  @ThemeAccentColor2;
+    border-width: 5px 0px 5px 0px;
+    border-style: solid;
+    border-color: transparent;
+    margin: 0px -1px 0px 0px; /* hack for Mac... try it on Windows and Linux */
+}
+
 QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleNum"], QWidget[objectName="TechDrawGui__TaskProjGroup"] QSpinBox[objectName="sbScaleDen"]{
     min-width: 28px;
+}
+
+QWidget[objectName="TechDrawGui__TaskSurfaceFinishSymbols"] QPushButton {
+    min-width: 50px;
+    min-height: 50px;
+    margin: 1px 3px 0px 3px;
+    padding: 4px 6px;
 }
 
 QTableWidget[objectName="PreferencePacks"] QPushButton {
     min-width: 28px;
     min-height: 14px;
+}
+
+QToolBar[objectName="Draft snap"] QToolButton, QToolBar[objectName="draft_snap_widget"] QToolButton {
+    border: 1px solid transparent;
+    border-radius: 1.9px;
+    padding: 0px;
+}
+
+QToolBar[objectName="Draft snap"] QToolButton:checked, QToolBar[objectName="draft_snap_widget"] QToolButton:checked {
+    border: 1px solid #7cabf9;
+    border-radius: 1.9px;
+    padding: 0px;
+    background-color: rgba(124,171,249,60); /* transparency for #7cabf9 color */
+}
+
+QToolBar[objectName="Draft snap"] QToolButton:checked:disabled, QToolBar[objectName="draft_snap_widget"] QToolButton:checked:disabled {
+    background-color: #b65555;
+    color: #b8aba0;
+    border-radius: 1.9px;
+    padding: 0px;
+    outline: none;
+}
+
+QToolBar[objectName="Draft snap"] QToolButton:checked:hover, QToolBar[objectName="draft_snap_widget"] QToolButton:checked:hover {
+    border: 1px solid #7cabf9;
+    border-radius: 1.9px;
+    padding: 0px;
+    background-color: rgba(124,171,249,80); /* transparency for #7cabf9 color */
+}
+
+QLabel[objectName="labelStatus"] {
+    color: #61D29D;
+    font-weight: bold;
+    background-color: #2C333D;
 }

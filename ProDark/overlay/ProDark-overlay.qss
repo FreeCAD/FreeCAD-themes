@@ -43,14 +43,17 @@ Gui--OverlayTabWidget[transparent="true"] QTreeView::item {
 
 Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected {
   color: #ffffff;
+  background-color: #3c3c3c;
 }
 
 Gui--OverlayTabWidget[transparent="true"] QTreeView::item:focus {
   color: #ffffff;
+  background-color: #3c3c3c;
 }
 
 Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected:focus {
   color: #ffffff;
+  background-color: #3c3c3c;
 }
 
 /* The OverlayTabWidget is named as OverlayLeft, OverlayRight, OverlayTop, OverlayBottom.
@@ -82,7 +85,7 @@ Gui--OverlayTabWidget#OverlayBottom {
 Gui--PropertyEditor--PropertyEditor {
   qproperty-groupTextColor: #bebebe;
   qproperty-groupBackground: #2a2a2a;
-  qproperty-itemBackground: #2a2a2a;
+  qproperty-itemBackground: #2C333D;
 }
 
 Gui--OverlayTabWidget::pane {
@@ -130,6 +133,7 @@ Gui--OverlayToolButton::pressed,
 Gui--OverlayToolButton:checked {
   border: 0.5px solid #696969;
   border-radius: 2px;
+  background-color: #696969;
 }
 
 Gui--OverlayToolButton:checked:hover {
