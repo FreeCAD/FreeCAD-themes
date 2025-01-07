@@ -1869,7 +1869,7 @@ QComboBox inside Task Panel content
 ==================================================================================================*/
 /* Fix for QComboBox inside Task Panel due to not correctly styling it with regular */
 /* found inside TechDraw Workbench and "insert multiple views" from toolbar */
-/* TODO: external border not working, in the rest of GUI works setting up Qmenu background color but inside Task Panel it doesn't... 
+/* TODO: external border not working, in the rest of GUI works setting up Qmenu background color but inside Task Panel it doesn't...
 QSint--ActionGroup QFrame[class="content"] QMenu,
 QSint--ActionGroup QFrame[class="content"] QMenu::item {
     background-color: #2a2a2a;
@@ -2619,4 +2619,3 @@ QLabel[objectName="labelStatus"] {
     font-weight: bold;
     background-color: #333333;
 }
-
