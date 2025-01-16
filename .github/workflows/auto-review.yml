@@ -10,4 +10,4 @@ jobs:
     steps:
       - uses: hkusu/review-assign-action@v1
         with:
-          reviewers: kadet1090
+          reviewers: ${{ vars.AUTO_REVIEWERS }}
