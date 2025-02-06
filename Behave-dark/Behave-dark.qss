@@ -2558,3 +2558,8 @@ QLabel[objectName="labelStatus"] {
     font-weight: bold;
     background-color: #2C333D;
 }
+
+QDialogButtonBox QPushButton {
+    min-width: 24px;
+    padding: 4px 6px;
+}
