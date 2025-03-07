@@ -1685,6 +1685,11 @@ QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
     background-color: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 @ThemeAccentColor1, stop:1 @ThemeAccentColor3);
 }
 
+QSint--ActionGroup QFrame[class="content"] QToolButton:checked {
+    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.3, x2:0, y2:1, stop:0 #406350, stop:1 #68917a);
+}
+
 /* QSlider ----------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qslider

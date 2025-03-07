@@ -1629,6 +1629,11 @@ QSint--ActionGroup QFrame[class="content"] QToolButton:pressed {
     background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 @ThemeAccentColor3, stop:1  @ThemeAccentColor1);
 }
 
+QSint--ActionGroup QFrame[class="content"] QToolButton:checked {
+    color: white;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0.3, x2:0, y2:1, stop:0 #406350, stop:1 #68917a);
+}
+
 /* QToolButtons with a menu found in Sketcher task panel*/
 QSint--ActionGroup QToolButton::menu-button {
     border: none;
