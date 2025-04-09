@@ -50,5 +50,19 @@
             <file>Light-modern.qss</file>
             <file>Light-modern-overlay.qss</file>
         </preferencepack>
+        <preferencepack>
+            <name>FreeCAD ColorPalette 2D</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>FreeCAD ColorPalette 2D.qss</file>
+            <file>FreeCAD ColorPalette Overlay.qss</file>
+        </preferencepack>
+        <preferencepack>
+            <name>FreeCAD ColorPalette 3D</name>
+            <type>Theme</type>
+            <tag>dark</tag>
+            <file>FreeCAD ColorPalette 3D.qss</file>
+            <file>FreeCAD ColorPalette Overlay.qss</file>
+        </preferencepack>
     </content>
 </package>
