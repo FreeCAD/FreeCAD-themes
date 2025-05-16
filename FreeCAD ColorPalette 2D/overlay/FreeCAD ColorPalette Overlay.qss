@@ -72,7 +72,7 @@ Gui--PropertyEditor--PropertyEditor {
   margin: 1px 0px;
   border: 1px solid transparent;
 }
-  
+
  QTreeView::item:selected,
  QTreeView::item:hover {
    border: none;
@@ -92,7 +92,7 @@ Gui--PropertyEditor--PropertyEditor {
     border: 1px solid @ThemeAccentColor1;
 }
 
-Gui--TaskView--TaskPanel { 
+Gui--TaskView--TaskPanel {
   background-color: transparent;
   border: none;
 }
