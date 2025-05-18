@@ -11,6 +11,7 @@ Gui--OverlayTitleBar,
 Gui--OverlaySplitterHandle {
   text-align: center;
   background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.2);
 }
 
  /* Gui--OverlayTabWidget#OverlayLeft {} */
@@ -66,7 +67,7 @@ QTableView {
   margin: 1px 0px;
   border: 1px solid transparent;
 }
-
+  
 QTreeView::item:selected,
 QTreeView::item:hover {
    border: none;
@@ -86,13 +87,15 @@ QTreeView::item:hover {
     border: 1px solid @ThemeAccentColor1;
 } */
 
-Gui--TaskView--TaskPanel {
+Gui--TaskView--TaskPanel { 
   background-color: transparent;
   border: none;
 }
 
 Gui--OverlayToolButton{
   image: url(qss:images_classic/close-black.png);
+  padding: 1px 2px 2px 2px;
+  margin-bottom: 2px;
 }
 
 Gui--OverlayToolButton:hover {
