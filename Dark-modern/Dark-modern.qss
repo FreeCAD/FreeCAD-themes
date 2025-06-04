@@ -2195,6 +2195,14 @@ QTreeView::branch:open:has-children:!has-siblings {
     border-image: url(qss:images_dark-light/branch_end_open_light.svg) 0;
 }
 
+QTreeView::indicator,
+QListView::indicator,
+QTableView::indicator,
+QColumnView::indicator {
+  width: 12px;
+  height: 12px;
+}
+
 QTreeView::indicator:checked,
 QListView::indicator:checked,
 QTableView::indicator:checked,
