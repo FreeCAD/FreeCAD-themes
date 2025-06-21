@@ -184,3 +184,12 @@ QComboBox QAbstractItemView {
   border-color: transparent;
   margin: 0px -1px 0px 0px; /* hack for Mac... try it on Windows and Linux */
 }
+
+QDockWidget QTreeView,
+QDockWidget QListView,
+QDockWidget QTableView {
+    margin: 6px;
+    border: 1px solid #333333; /* same as regular QTreeView, QListView and QTableView */
+    min-height: 100px; /* necessary in some areas of FreeCAD */
+}
+
