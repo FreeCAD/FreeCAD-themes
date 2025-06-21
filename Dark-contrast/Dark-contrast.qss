@@ -2323,10 +2323,6 @@ QPushButton#NavigationIndicator::menu-indicator {
     width: 0px;
 }
 
-QToolBar QToolButton[popupMode="1"] {
-    width: 100px;
-    background: red;
-}
 
 /*==================================================================================================
 SKETCHER
