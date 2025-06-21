@@ -188,4 +188,3 @@ QDockWidget QTableView {
     border: 1px solid #333333; /* same as regular QTreeView, QListView and QTableView */
     min-height: 100px; /* necessary in some areas of FreeCAD */
 }
-
