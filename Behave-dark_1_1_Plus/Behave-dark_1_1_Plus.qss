@@ -2592,4 +2592,3 @@ QMenu, QMenu::item, QMenu::item:hover {
     font-family: Ubuntu;
     font-size: 10pt;
 }
-
