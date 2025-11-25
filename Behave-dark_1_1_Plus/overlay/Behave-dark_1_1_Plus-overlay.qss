@@ -1,0 +1,171 @@
+QFrame {
+  border: none;
+}
+
+QTabWidget::pane {
+  background-color: transparent;
+  border: transparent;
+}
+
+QAbstractItemView {
+  background-color: transparent;
+  alternate-background-color: @NearlyBlack; /* related with QListView background  */
+  color: #65A2E5;
+  border: transparent;
+  padding-right: 5px;
+}
+
+Gui--OverlayTitleBar,
+Gui--OverlaySplitterHandle {
+  background-color: transparent;
+}
+
+Gui--OverlayTabWidget[transparent="false"] QTreeView::item {
+  color: #ffffff;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item {
+  color: #ffffff;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected {
+  color: #ffffff;
+  background-color: @DarkGrey;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:focus {
+  color: #ffffff;
+  background-color: @VeryDarkGrey;
+}
+
+Gui--OverlayTabWidget[transparent="true"] QTreeView::item:selected:focus {
+  color: #ffffff;
+  background-color: @VeryDarkGrey;
+}
+
+/* The OverlayTabWidget is named as OverlayLeft, OverlayRight, OverlayTop, OverlayBottom.
+To customize for each overlay docking site, use the following selector
+
+Gui--OverlayTabWidget#OverlayLeft {}
+*/
+
+Gui--OverlayTabWidget {
+  qproperty-effectColor: rgba(25, 25, 25, 220);
+  qproperty-effectBlurRadius: 5;
+  qproperty-effectOffsetX: 0;
+  qproperty-effectOffsetY: 0;
+  qproperty-effectWidth: 1;
+  qproperty-effectHeight: 1;
+  qproperty-enableEffect: 1;
+}
+
+Gui--OverlayTabWidget#OverlayBottom {
+  qproperty-effectColor: rgba(100, 100, 100, 220);
+  qproperty-effectBlurRadius: 5;
+  qproperty-effectOffsetX: 0.0;
+  qproperty-effectOffsetY: 0.0;
+  qproperty-effectWidth: 1;
+  qproperty-effectHeight: 1;
+  qproperty-enableEffect: 1;
+}
+
+Gui--PropertyEditor--PropertyEditor {
+  qproperty-groupTextColor: @TooltipSpecial;
+  qproperty-groupBackground: @VeryDarkGrey;
+  qproperty-itemBackground: @VeryDarkGrey;
+}
+
+Gui--OverlayTabWidget::pane {
+  background-color: transparent;
+  border: transparent;
+}
+
+QSint--ActionGroup QFrame[class="content"] {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+Gui--OverlayTabWidget::tab-bar:top,
+Gui--OverlayTabWidget::tab-bar:bottom {
+  left: 10px;
+  alignment: left;
+}
+
+Gui--OverlayTabWidget::tab-bar:left,
+Gui--OverlayTabWidget::tab-bar:right {
+  top: 10px;
+  alignment: top;
+}
+
+Gui--OverlayProxyWidget {
+  qproperty-hintColor: rgba(250, 250, 250, 0.6);
+}
+
+Gui--OverlayToolButton {
+  border: 0.5px solid transparent;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton:hover {
+  border: 0.5px solid #f5f5f5;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton:focus {
+  border: 0.5px solid #0099ff;
+  border-radius: 2px;
+}
+
+Gui--OverlayToolButton::pressed,
+Gui--OverlayToolButton:checked {
+  border: 0.5px solid #696969;
+  border-radius: 2px;
+  background-color: #696969;
+}
+
+Gui--OverlayToolButton:checked:hover {
+  border: 0.5px solid #f5f5f5;
+}
+
+Gui--OverlayToolButton[objectName="OBTN Transparent"] {
+  image: url(qss:@IconsLocationFolderName/transparent-lightgray.svg);
+  }
+
+Gui--OverlayToolButton[objectName="OBTN Transparent"]:hover {
+  image: url(qss:@IconsLocationFolderName/transparent-@StylesheetIconsColor.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN Overlay"] {
+  image: url(qss:@IconsLocationFolderName/overlay-lightgray.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN Overlay"]:hover {
+  image: url(qss:@IconsLocationFolderName/overlay-@StylesheetIconsColor.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN AutoMode"] {
+  image: url(qss:@IconsLocationFolderName/mode-lightgray.svg);
+}
+
+Gui--OverlayToolButton[objectName="OBTN AutoMode"]:hover {
+  image: url(qss:@IconsLocationFolderName/mode-@StylesheetIconsColor.svg);
+}
+
+QComboBox QAbstractItemView {
+  color: #bebebe; /* same as regular QComboBox color */
+  background-color: @NearlyBlack;
+  selection-color: white;
+  selection-background-color:  @ThemeAccentColor2;
+  border-width: 5px 0px 5px 0px;
+  border-style: solid;
+  border-color: transparent;
+  margin: 0px -1px 0px 0px; /* hack for Mac... try it on Windows and Linux */
+}
+
+QDockWidget QTreeView,
+QDockWidget QListView,
+QDockWidget QTableView {
+    margin: 6px;
+    border: 1px solid #434D5B; /* same as regular QTreeView, QListView and QTableView */
+    min-height: 100px; /* necessary in some areas of FreeCAD */
+}
