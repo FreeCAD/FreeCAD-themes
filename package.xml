@@ -7,7 +7,7 @@
     <maintainer email="themes@freecad.org">The FreeCAD Team</maintainer>
     <license file="LICENSE">LGPL-2.1-or-later</license>
     <url type="repository" branch="main">https://github.com/FreeCAD/FreeCAD-themes</url>
-    <icon>resources/icons/themes.svg</icon>
+    <!-- No icon yet <icon></icon> -->
 
     <content>
         <preferencepack>
