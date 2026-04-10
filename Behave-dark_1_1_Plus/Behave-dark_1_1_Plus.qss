@@ -2609,4 +2609,3 @@ QTreeView:disabled,
 QTreeView::indicator:disabled {
     color: @TextDisabledColor;
 }
-
