@@ -65,7 +65,7 @@ SketcherUnderConstrainedColor: "#ffffff"
 StylesheetIconsColor: white
 TabbarBackgroundColor: "@PrimaryColorDarken5"
 Teal: "#588AC1"
-TextDisabledColor: darken(@TextForegroundColor,40)
+TextDisabledColor: "#436D9B"
 TextEditFieldBackgroundColor: "@PrimaryColor"
 TextForegroundColor: "#ffffff"
 TextSelectBackgroundColor: darken(@AccentColor,100)
