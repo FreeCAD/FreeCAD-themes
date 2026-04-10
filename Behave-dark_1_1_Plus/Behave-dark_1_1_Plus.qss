@@ -1747,7 +1747,13 @@ QRadioButton::indicator:checked {
     image:url(qss:images_dark-light/radiobutton_light.svg);
 }
 
-QRadioButton,
+QRadioButton {
+    color: @ThemeAccentColor3;
+    padding: 3px;
+    outline: none;
+    background-color: transparent;
+}
+
 QRadioButton:disabled {
     color:  @TextDisabledColor;
     padding: 3px;
@@ -1780,7 +1786,13 @@ QRadioButton:focus {
 /*==================================================================================================
 Checkbox
 ==================================================================================================*/
-QCheckBox,
+QCheckBox {
+    color: @ThemeAccentColor3;
+    padding: 3px;
+    outline: none;
+    background-color: transparent;
+}
+
 QCheckBox:disabled {
     color:  @TextDisabledColor;
     padding: 3px;
@@ -2592,3 +2604,9 @@ QMenu, QMenu::item, QMenu::item:hover {
     font-family: Ubuntu;
     font-size: 10pt;
 }
+
+QTreeView:disabled,
+QTreeView::indicator:disabled {
+    color: @TextDisabledColor;
+}
+
