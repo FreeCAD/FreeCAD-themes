@@ -1802,6 +1802,11 @@ QLineEdit:selected {
   color: black;
 }
 
+QLineEdit[readOnly="true"] {
+  background-color: #f6f6f6;
+  color: #515151;
+}
+
 /* QTabWiget --------------------------------------------------------------
 
 https://doc.qt.io/qt-5/stylesheet-examples.html#customizing-qtabwidget-and-qtabbar
