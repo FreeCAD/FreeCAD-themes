@@ -1247,6 +1247,11 @@ QDateTimeEdit:disabled {
     border-color: black; /* same as enabled color */
 }
 
+QLineEdit[readOnly="true"] {
+    color: #545454;
+    background-color: black; /* same as enabled color */
+}
+
 QAbstractSpinBox:up-button,
 QSpinBox:up-button,
 QDoubleSpinBox:up-button,
