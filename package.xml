@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no" ?>
 <package format="1" xmlns="https://wiki.freecad.org/Package_Metadata">
     <name>FreeCAD-themes</name>
-    <version>2025.11.25</version>
-    <date>2025.11.25</date>
+    <version>2026.08.16</version>
+    <date>2026.08.16</date>
     <description>Additional themes for FreeCAD</description>
     <maintainer email="themes@freecad.org">The FreeCAD Team</maintainer>
     <license file="LICENSE">LGPL-2.1-or-later</license>
     <url type="repository" branch="main">https://github.com/FreeCAD/FreeCAD-themes</url>
-    <icon>resources/icons/themes.svg</icon>
+    <icon>extra_themes.svg</icon>
 
     <content>
         <preferencepack>
@@ -23,13 +23,14 @@
             <tag>dark</tag>
             <file>Behave-dark_1_1_Plus.qss</file>
             <file>Behave-dark_1_1_Plus-overlay.qss</file>
-            <file>Behave-dark_1_1_Plus-overlay.yaml</file>
+            <file>Behave-dark_1_1_Plus.yaml</file>
         </preferencepack>
         <preferencepack>
             <name>Dark-contrast</name>
             <type>Theme</type>
             <tag>dark</tag>
             <file>Dark-contrast.qss</file>
+            <file>Dark-contrast-overlay.qss</file>
         </preferencepack>
         <preferencepack>
             <name>Darker</name>
@@ -43,6 +44,7 @@
             <type>Theme</type>
             <tag>dark</tag>
             <file>ProDark.qss</file>
+            <file>ProDark-overlay.qss</file>
         </preferencepack>
         <preferencepack>
             <name>Dark-modern</name>
